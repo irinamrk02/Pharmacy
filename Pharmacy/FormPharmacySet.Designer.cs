@@ -32,6 +32,11 @@
             this.textBoxPharmacy = new System.Windows.Forms.TextBox();
             this.textBoxAddress = new System.Windows.Forms.TextBox();
             this.listViewPharmacy = new System.Windows.Forms.ListView();
+            this.columnHeaderId = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeaderName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeaderAddress = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeaderEmail = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeaderPhone = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.textBoxEmail = new System.Windows.Forms.TextBox();
             this.textBoxPhone = new System.Windows.Forms.TextBox();
             this.labelName = new System.Windows.Forms.Label();
@@ -41,11 +46,6 @@
             this.buttonAdd = new System.Windows.Forms.Button();
             this.buttonEdit = new System.Windows.Forms.Button();
             this.buttonDel = new System.Windows.Forms.Button();
-            this.columnHeaderId = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeaderAddress = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeaderEmail = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeaderPhone = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeaderName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -86,6 +86,31 @@
             this.listViewPharmacy.TabIndex = 3;
             this.listViewPharmacy.UseCompatibleStateImageBehavior = false;
             this.listViewPharmacy.View = System.Windows.Forms.View.Details;
+            this.listViewPharmacy.SelectedIndexChanged += new System.EventHandler(this.ListViewPharmacy_SelectedIndexChanged);
+            // 
+            // columnHeaderId
+            // 
+            this.columnHeaderId.Text = "Id";
+            // 
+            // columnHeaderName
+            // 
+            this.columnHeaderName.Text = "Название";
+            this.columnHeaderName.Width = 106;
+            // 
+            // columnHeaderAddress
+            // 
+            this.columnHeaderAddress.Text = "Адрес";
+            this.columnHeaderAddress.Width = 81;
+            // 
+            // columnHeaderEmail
+            // 
+            this.columnHeaderEmail.Text = "Почта";
+            this.columnHeaderEmail.Width = 87;
+            // 
+            // columnHeaderPhone
+            // 
+            this.columnHeaderPhone.Text = "Телефон";
+            this.columnHeaderPhone.Width = 99;
             // 
             // textBoxEmail
             // 
@@ -155,6 +180,7 @@
             this.buttonAdd.TabIndex = 10;
             this.buttonAdd.Text = "Создать";
             this.buttonAdd.UseVisualStyleBackColor = false;
+            this.buttonAdd.Click += new System.EventHandler(this.ButtonAdd_Click);
             // 
             // buttonEdit
             // 
@@ -167,6 +193,7 @@
             this.buttonEdit.TabIndex = 11;
             this.buttonEdit.Text = "Изменить";
             this.buttonEdit.UseVisualStyleBackColor = false;
+            this.buttonEdit.Click += new System.EventHandler(this.ButtonEdit_Click);
             // 
             // buttonDel
             // 
@@ -179,30 +206,7 @@
             this.buttonDel.TabIndex = 12;
             this.buttonDel.Text = "Удалить";
             this.buttonDel.UseVisualStyleBackColor = false;
-            // 
-            // columnHeaderId
-            // 
-            this.columnHeaderId.Text = "Id";
-            // 
-            // columnHeaderAddress
-            // 
-            this.columnHeaderAddress.Text = "Адрес";
-            this.columnHeaderAddress.Width = 81;
-            // 
-            // columnHeaderEmail
-            // 
-            this.columnHeaderEmail.Text = "Почта";
-            this.columnHeaderEmail.Width = 87;
-            // 
-            // columnHeaderPhone
-            // 
-            this.columnHeaderPhone.Text = "Телефон";
-            this.columnHeaderPhone.Width = 99;
-            // 
-            // columnHeaderName
-            // 
-            this.columnHeaderName.Text = "Название";
-            this.columnHeaderName.Width = 106;
+            this.buttonDel.Click += new System.EventHandler(this.ButtonDel_Click);
             // 
             // pictureBox1
             // 

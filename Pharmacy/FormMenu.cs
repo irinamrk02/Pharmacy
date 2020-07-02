@@ -16,5 +16,23 @@ namespace Pharmacy
         {
             InitializeComponent();
         }
+
+        private void ButtonPharmacy_Click(object sender, EventArgs e)
+        {
+            FormPharmacy pharmacy = new FormPharmacy();
+            pharmacy.Show();
+        }
+
+        private void ButtonMedication_Click(object sender, EventArgs e)
+        {
+            FormMedicationSet medication = new FormMedicationSet();
+            medication.Show();
+        }
+
+        private void ButtonAvailability_Click(object sender, EventArgs e)
+        {
+            FormAvailability availability = new FormAvailability();
+            availability.Show();
+        }
     }
 }

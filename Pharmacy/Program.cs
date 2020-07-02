@@ -8,6 +8,7 @@ namespace Pharmacy
 {
     static class Program
     {
+        public static PharmacyEntities pharmacy = new PharmacyEntities();
         /// <summary>
         /// Главная точка входа для приложения.
         /// </summary>
@@ -16,7 +17,7 @@ namespace Pharmacy
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormPharmacy());
+            Application.Run(new FormMenu());
         }
     }
 }

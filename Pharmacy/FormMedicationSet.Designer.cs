@@ -44,11 +44,11 @@
             this.columnHeaderMaker = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.textBoxDosage = new System.Windows.Forms.TextBox();
             this.textBoxMedication = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.comboBoxFormRelease = new System.Windows.Forms.ComboBox();
             this.labelFormRelease = new System.Windows.Forms.Label();
             this.dateTimePickerDate = new System.Windows.Forms.DateTimePicker();
             this.columnHeaderDate = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -198,20 +198,16 @@
             this.textBoxMedication.Size = new System.Drawing.Size(217, 32);
             this.textBoxMedication.TabIndex = 14;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Pharmacy.Properties.Resources._119_1192900_pharmacy_icon_svg_png_icon_free_download_healthcare_innovation_icon;
-            this.pictureBox1.Location = new System.Drawing.Point(-14, -1);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(245, 176);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 13;
-            this.pictureBox1.TabStop = false;
-            // 
             // comboBoxFormRelease
             // 
             this.comboBoxFormRelease.Font = new System.Drawing.Font("Calibri", 12F);
             this.comboBoxFormRelease.FormattingEnabled = true;
+            this.comboBoxFormRelease.Items.AddRange(new object[] {
+            "Таблетки",
+            "Капсулы",
+            "Ампулы",
+            "Сироп",
+            "Крем"});
             this.comboBoxFormRelease.Location = new System.Drawing.Point(12, 287);
             this.comboBoxFormRelease.Name = "comboBoxFormRelease";
             this.comboBoxFormRelease.Size = new System.Drawing.Size(217, 32);
@@ -241,6 +237,16 @@
             this.columnHeaderDate.Text = "Дата производства";
             this.columnHeaderDate.Width = 134;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Pharmacy.Properties.Resources._119_1192900_pharmacy_icon_svg_png_icon_free_download_healthcare_innovation_icon;
+            this.pictureBox1.Location = new System.Drawing.Point(-14, -1);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(245, 176);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 13;
+            this.pictureBox1.TabStop = false;
+            // 
             // FormMedicationSet
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -263,8 +269,8 @@
             this.Controls.Add(this.textBoxMedication);
             this.Controls.Add(this.pictureBox1);
             this.Name = "FormMedicationSet";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Лекарства";
-            this.Load += new System.EventHandler(this.FormMedicationSet_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

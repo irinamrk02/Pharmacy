@@ -15,11 +15,26 @@ namespace Pharmacy
         public FormMedicationSet()
         {
             InitializeComponent();
+            ShowMedication();
         }
 
-        private void FormMedicationSet_Load(object sender, EventArgs e)
+        void ShowMedication()
         {
+            listViewMedication.Items.Clear();
+            foreach (MedicationSet medication in Program.pharmacy.MedicationSet)
+            {
+                ListViewItem item = new ListViewItem(new string[]
+                {
+                    medication.Id.ToString(), medication.Medication,
+                    medication.FormRelease.ToString(),medication.Dosage,
+                    medication.Maker, medication.ProductionDate.ToString()
+                });
+                item.Tag = medication;
+                listViewMedication.Items.Add(item);
+            }
+            listViewMedication.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
 
         }
+
     }
 }
