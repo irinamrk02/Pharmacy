@@ -199,6 +199,7 @@
             this.buttonDel.TabIndex = 38;
             this.buttonDel.Text = "Удалить";
             this.buttonDel.UseVisualStyleBackColor = false;
+            this.buttonDel.Click += new System.EventHandler(this.ButtonDel_Click);
             // 
             // buttonEdit
             // 
@@ -211,6 +212,7 @@
             this.buttonEdit.TabIndex = 37;
             this.buttonEdit.Text = "Изменить";
             this.buttonEdit.UseVisualStyleBackColor = false;
+            this.buttonEdit.Click += new System.EventHandler(this.ButtonEdit_Click);
             // 
             // buttonAdd
             // 
@@ -223,6 +225,7 @@
             this.buttonAdd.TabIndex = 36;
             this.buttonAdd.Text = "Создать";
             this.buttonAdd.UseVisualStyleBackColor = false;
+            this.buttonAdd.Click += new System.EventHandler(this.ButtonAdd_Click);
             // 
             // columnHeaderMedication
             // 
