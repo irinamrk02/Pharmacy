@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Pharmacy
 {
-    public partial class FormPharmacy : Form
+    public partial class FormMenu : Form
     {
-        public FormPharmacy()
+        public FormMenu()
         {
             InitializeComponent();
         }

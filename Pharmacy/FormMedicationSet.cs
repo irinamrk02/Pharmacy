@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace Pharmacy
 {
-    public partial class FormPharmacy : Form
+    public partial class FormMedicationSet : Form
     {
-        public FormPharmacy()
+        public FormMedicationSet()
         {
             InitializeComponent();
+        }
+
+        private void FormMedicationSet_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
