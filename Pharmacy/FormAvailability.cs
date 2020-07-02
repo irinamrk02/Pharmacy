@@ -16,10 +16,15 @@ namespace Pharmacy
         {
             InitializeComponent();
         }
-
-        private void FormAvailability_Load(object sender, EventArgs e)
+        void ShowPharmacy()
         {
+            comboBoxPharmacy.Items.Clear();
+            foreach (PharmacySet pharmacy in Program.pharmacy.PharmacySet)
+            {
+                string[] item = { pharmacy.Id.ToString() + ".", pharmacy.Title };
+            }
 
         }
+
     }
 }

@@ -63,6 +63,7 @@
             this.buttonDel.TabIndex = 25;
             this.buttonDel.Text = "Удалить";
             this.buttonDel.UseVisualStyleBackColor = false;
+            this.buttonDel.Click += new System.EventHandler(this.ButtonDel_Click);
             // 
             // buttonEdit
             // 
@@ -75,6 +76,7 @@
             this.buttonEdit.TabIndex = 24;
             this.buttonEdit.Text = "Изменить";
             this.buttonEdit.UseVisualStyleBackColor = false;
+            this.buttonEdit.Click += new System.EventHandler(this.ButtonEdit_Click);
             // 
             // buttonAdd
             // 
@@ -87,6 +89,7 @@
             this.buttonAdd.TabIndex = 23;
             this.buttonAdd.Text = "Создать";
             this.buttonAdd.UseVisualStyleBackColor = false;
+            this.buttonAdd.Click += new System.EventHandler(this.ButtonAdd_Click);
             // 
             // labelPhone
             // 
@@ -157,6 +160,7 @@
             this.listViewMedication.TabIndex = 16;
             this.listViewMedication.UseCompatibleStateImageBehavior = false;
             this.listViewMedication.View = System.Windows.Forms.View.Details;
+            this.listViewMedication.SelectedIndexChanged += new System.EventHandler(this.ListViewMedication_SelectedIndexChanged);
             // 
             // columnHeaderId
             // 
