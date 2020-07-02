@@ -101,5 +101,23 @@ namespace Pharmacy
                 MessageBox.Show("Невозможно удалить, эта запись используется", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void TextBoxKol_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char number = e.KeyChar;
+            if (!Char.IsDigit(number) && number != 8 && number != 44 && number != 45)
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void TextBoxPrice_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char number = e.KeyChar;
+            if (!Char.IsDigit(number) && number != 8 && number != 44 && number != 45)
+            {
+                e.Handled = true;
+            }
+        }
     }
 }

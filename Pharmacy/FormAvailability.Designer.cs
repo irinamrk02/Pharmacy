@@ -127,6 +127,7 @@
             this.textBoxPrice.Name = "textBoxPrice";
             this.textBoxPrice.Size = new System.Drawing.Size(269, 32);
             this.textBoxPrice.TabIndex = 32;
+            this.textBoxPrice.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextBoxPrice_KeyPress);
             // 
             // textBoxKol
             // 
@@ -135,6 +136,7 @@
             this.textBoxKol.Name = "textBoxKol";
             this.textBoxKol.Size = new System.Drawing.Size(269, 32);
             this.textBoxKol.TabIndex = 31;
+            this.textBoxKol.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextBoxKol_KeyPress);
             // 
             // listViewAvailability
             // 
